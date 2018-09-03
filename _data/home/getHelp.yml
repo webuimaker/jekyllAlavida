@@ -1,0 +1,15 @@
+title: "With Alavida You Can<br>Learn More, Get Help, and Take Action"
+###Members
+section:
+ - image: assets/images/screen-news.png
+   btntext: LEARN MORE
+   btnUrl: "#"
+   btnPopupKlass: openmodal
+ - image: assets/images/get-help-screen.png
+   btntext: Get Help
+   btnUrl: "https://alavida.co/booking/assessment"
+   btnPopupKlass: 
+ - image: assets/images/take-action-screen.png
+   btntext: Take Action
+   btnUrl: "#"
+   btnPopupKlass: openmodal

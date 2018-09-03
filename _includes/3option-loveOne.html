@@ -1,0 +1,34 @@
+<!-- #3 option Area start -->
+<section class="section">
+	<div  id="about"  class=" back-right-text-c">
+		<div class="container">
+			<div class="row text-center mb-60 ">
+				<div class="wow">
+					<div class="col-md-8 col-md-offset-2"><h1 class="text-center wow "> {{ page.callAction-heading }} </h1></div>
+				</div>
+            </div>
+			
+			<div class="col-md-10 col-md-offset-1">
+            <div class="row about_row  py-40">
+				<!--#Call Action  --> 
+				{% for action in page.callAction %}
+					<div class="who_we_area col-md-4 col-sm-6 col-4pad wow fadeInUp">
+						<div class="service-1 call-action">
+							<div class="servise-img wow fadeInUp">                        
+								<img src="{{ action.icon }}" alt="{{ action.icon }}">
+							</div>
+							<div class="services-box-con text-center">
+								<h2 class="unify"> {{ action.text }}</h2>
+							</div>
+						</div>
+					</div>
+				{% endfor %}
+				
+               <!--#End CALL ACTION  --> 
+            </div>
+			</div>
+		
+		</div>
+	</div>
+</section>
+<!-- #3 option Area END -->

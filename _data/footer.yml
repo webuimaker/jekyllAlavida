@@ -1,0 +1,45 @@
+newsletterText: "Drink Less with ALAVIDA. Start today!"
+newsletterPlaceholder: You@example.com
+newsletterBtnText: GET STARTED
+footerLogo: assets/images/logo_img.png
+aboutText: "ALAVIDA does not provide medical advice, diagnosis, or treatment."
+copyright: "© 2018 Alavida Health, all rights reserved."
+links:
+ col1:
+    - name: For You
+      path: index.html
+      section_id: home
+    - name: For Companies
+      path: "#"
+      section_id: companies
+    - name: For Loved Ones
+      path: love-one.html
+      section_id: love-one
+    - name: Science
+      path: https://alavida.co/publications
+      section_id: 
+    - name: Terms
+      path: https://alavida.co/terms-of-service
+      section_id: 
+    - name: Privacy
+      path: https://alavida.co/privacy
+      section_id: 
+    - name: Referral
+      path: "#"
+      section_id: referral
+ col2:
+    - name: Contact
+      path: "#"
+      section_id: contact
+    - name: Blog
+      path: "#"
+      section_id: blog
+    - name: News
+      path: "#"
+      section_id: news
+    - name: Help
+      path: "#"
+      section_id: help
+    - name: Work with Us
+      path: "https://alavida-health-ltd.workable.com"
+      section_id: work-with-us

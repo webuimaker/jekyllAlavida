@@ -1,0 +1,8 @@
+heading: Available to Everyone With & Without Insurance
+subDesc: "Alavida is available in Canada and the United States, and we can help you talk to your insurance provider.<br>The price for a doctor visit may be significantly lower than at an urgent care clinic.<br>Schedule now and talk to a specialist in problems related to alcohol."
+tabs:
+  - tabName: With Insurance
+    btnText: Learn more
+    btnUrl: "#"
+    btnPopupKlass: openmodal
+    desc: openmodal

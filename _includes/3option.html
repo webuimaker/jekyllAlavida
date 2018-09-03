@@ -4,53 +4,28 @@
 		<div class="container">
 			<div class="row text-center mb-60 ">
 				<div class="wow">
-					<div class="col-md-8 col-md-offset-2"><h1 class="text-center wow ">The World’s First Digital Problem Drinking Health and Wellness Hub is for Everyone</h1  ></div>
+					<div class="col-md-8 col-md-offset-2"><h1 class="text-center wow ">{{site.data.home.3option.heading }}</h1  ></div>
 				</div>
             </div>
             <div class="row about_row  py-40">
 				<!--#about-text start --> 
-				<div class="who_we_area col-md-4 col-sm-6 col-4pad wow fadeInUp">
-					<div class="service-1">
-						<div class="servise-img wow fadeInUp">                        
-							<img src="assets/images/members.jpg">
-						</div>
-						<div class="services-box-con">
-							<h2 class="unify"> Members</h2>
-							<p class="bottom-s">Access from anywhere top doctors and therapists, specialized in dealing with alcohol.</p>
-							<div class="button-div">
-								<a href="#" class="button-s ff openmodal"> Learn more   </a>
+				{% for action in site.data.home.3option.callAction %}
+					<div class="who_we_area col-md-4 col-sm-6 col-4pad wow fadeInUp">
+						<div class="service-1">
+							<div class="servise-img wow fadeInUp">                        
+								<img src="{{action.image}}" alt="{{action.text}}">
+							</div>
+							<div class="services-box-con">
+								<h2 class="unify"> {{action.text}}</h2>
+								<p class="bottom-s">{{action.desc}}</p>
+								<div class="button-div">
+									<a href="{{action.btnUrl}}" class="button-s ff {{action.btnPopupKlass}}"> {{action.btnText}} </a>
+								</div>
 							</div>
 						</div>
 					</div>
-				</div>
-				<div class="who_we_area col-md-4 col-sm-6 col-4pad wow fadeInUp">
-					<div class="service-1">
-						<div class="servise-img wow fadeInUp">  
-							<img src="assets/images/employers2.jpg">
-						</div>
-						<div class="services-box-con">
-							<h2 class="unify"> Employers</h2>
-							<p class="bottom-s">Improve productivity, lower costs and grow retention.</p>
-							<div class="button-div">
-								<a href="" class="button-s ff"> Learn more   </a>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="who_we_area col-md-4 col-sm-6 col-4pad wow fadeInUp">
-					<div class="service-1">
-						<div class="servise-img wow fadeInUp">                        
-							<img src="assets/images/doctor-therapist.jpg">
-						</div>
-						<div class="services-box-con">
-							<h2 class="unify"> Doctor and Therapist</h2>
-							<p class="bottom-s">Physician, therapist, or researcher? We love science! If you do too, be a part of what we do.</p>
-							<div class="button-div">
-								<a href="#" class="button-s ff openmodal"> Learn more   </a>
-							</div>
-						</div>
-					</div>
-               </div>
+				{% endfor %}
+				
                <!--#End about-text  --> 
             </div>
         </div>

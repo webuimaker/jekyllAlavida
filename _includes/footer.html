@@ -3,12 +3,12 @@
 	<div class="container">
 		<div class="footer-top">
 			<div class="row">
-				<div class="col-md-7 newsletter-title">Drink Less with ALAVIDA. Start today!</div>
+				<div class="col-md-7 newsletter-title">{{site.data.footer.newsletterText}}</div>
 				<div class="col-md-5">
 					<div class="input-group">
-						<input class="form-control email-input" placeholder="You@example.com" required="" type="email">
+						<input class="form-control email-input" placeholder="{{site.data.footer.newsletterPlaceholder}}" required="" type="email">
 						<span class="input-group-btn">
-							<input class="btn btn-success" value="GET STARTED" type="submit">
+							<input class="btn btn-success" value="{{site.data.footer.newsletterBtnText}}" type="submit">
 						</span>
 					</div>
 				</div>
@@ -17,44 +17,44 @@
         <div class="row footer-link-area">
 			<div class="col-lg-4  col-md-4 col-sm-12">
 				<div class="footer_dv">
-					<a class=" logo-biss" href="index.html"> <img src="assets/images/logo_img.png" alt="alavida"></a>                  
-					<p class="footer-about">ALAVIDA does not provide medical advice, diagnosis, or treatment.</p>
-					<p class="footer-about">© 2018 Alavida Health, all rights reserved.</p>
+					<a class=" logo-biss" href="{{site.baseurl}}"> <img src="{{site.data.footer.footerLogo}}" alt="alavida"></a>                  
+					<p class="footer-about">{{ site.data.footer.aboutText}}</p>
+					<p class="footer-about">{{ site.data.footer.copyright}}© 2018 Alavida Health, all rights reserved.</p>
 					<ul class="social-link">
-						<li>
-							<a href="https://twitter.com/thinkalavida"><i class="fa fa-twitter"></i></a>
-						</li>
-						<li>
-							<a href="https://www.instagram.com/alavida_health/"><i class="fa fa-instagram"></i></a>
-						</li>
-						<li>
-							<a href="https://www.facebook.com/alavidahealth/"><i class="fa fa-facebook"></i></a>
-						</li>
+						{% for item in site.social %}
+							<li>
+								<a href="{{item.url}}"><i class="fa {{item.icon}}"></i></a>
+							</li>
+						{% endfor %}
 					</ul>
 				</div>
 			</div>
 			<div class="col-lg-4 col-md-4 col-sm-6">
 				<div class="footer_dv">
 					<ul class="footer-menu">
-						<li><a href="#">For You</a></li>
-						<li><a href="#">For Companies</a> </li>
-						<li><a href="#">For Loved Ones</a> </li>
-						<li><a href="https://alavida.co/publications">Science</a> </li>
-						<li><a href="https://alavida.co/terms-of-service">Terms</a> </li>
-						<li><a href="https://alavida.co/privacy">Privacy</a></li>
-						<li><a href="#">Referral</a></li>
 						
+						{% for item in site.data.footer.links.col1 %}
+							{% if item.section_id == page.section_id %}
+								{% assign active_class = "active" %}
+							{% else %}
+								{% assign active_class = "" %}
+							{% endif %}
+							<li><a href="{{item.path}}" class="{{active_class}}">{{item.name}}</a></li>
+						{% endfor %}
                     </ul>
 				</div>
 			</div>
 			<div class="col-lg-4 col-md-4 col-sm-6">
 				<div class="footer_dv">
 					<ul class="footer-menu">
-						<li><a  >Contact</a></li> 
-						<li><a href="" class="openmodal">Blog</a> </li>
-						<li><a href="" class="openmodal">News</a> </li>
-						<li><a href="">Help</a> </li>
-						<li><a href="https://alavida-health-ltd.workable.com">Work with Us</a> </li>
+						{% for item in site.data.footer.links.col2 %}
+							{% if item.section_id == page.section_id %}
+								{% assign active_class = "active" %}
+							{% else %}
+								{% assign active_class = "" %}
+							{% endif %}
+							<li><a href="{{item.path}}" class="{{active_class}}">{{item.name}}</a></li>
+						{% endfor %}
                     </ul>
 				</div>
 			</div>
@@ -63,7 +63,6 @@
     </div>
 </footer>
 <!-- #Footer Area END -->
-
 <!-- POPUP here -->
 {% include hubspot-form.html %}
 {% include take-free-assessment.html %}

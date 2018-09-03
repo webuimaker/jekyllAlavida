@@ -1,0 +1,27 @@
+- name: For You
+  path: index.html
+  enable: false
+  section_id: home
+- name: For Companies
+  path: 
+  section_id: companies
+- name: For Loved Ones
+  path: love-one.html
+  section_id: love-one
+- name: Science
+  path: https://alavida.co/publications
+  section_id: science
+  children:
+    - name: 
+      path: 
+    - name: 
+      path: 
+- name: Referral
+  path: https://press.alavida.co
+  section_id: referral
+- name: Help
+  path: contact.html
+  section_id: help
+- name: Call Now
+  path: signup.html
+  section_id: call

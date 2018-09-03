@@ -1,0 +1,33 @@
+<!-- #3 option Area start -->
+<section class="section bod-bot">
+	<div  class=" back-right-text-c">
+		<div class="container">
+		{% if page.getHelp-heading == "" %}
+			<div class="row text-center mb-60 ">
+				<div class="wow">
+					<div class="col-md-8 col-md-offset-2"><h1 class="text-center wow "> </h1  ></div>
+				</div>
+            </div>
+		{% endif %}
+            <div class="row">
+				<div class="col-md-5">
+						<div class="title-left wow">
+							<h1 class="text-left wow fadeInUp" data-wow-delay="1s">{{page.getHelp-subHeading}}</h1>
+						</div>
+						<p class="about_bottom_h wow fadeInUp" data-wow-delay="1s">{{page.getHelp-desc}}</p>
+						
+						<div class="top-banner wow fadeInRight text-left">
+							<a  href="{{page.getHelp-buttonUrl}}" class="btn btn-default  wow fadeInUp  js-scroll-trigger" data-wow-delay="1s">{{page.getHelp-buttonText}}</a>
+						</div>
+					
+					</div>
+					<div class="col-md-6  col-md-offset-1">
+						<img src="{{ page.getHelp-image }}" alt="Feel better in 3 steps Learn More, Get Help and Take Action">
+					</div>
+					
+			</div>
+		
+		</div>
+	</div>
+</section>
+<!-- #3 option Area END -->

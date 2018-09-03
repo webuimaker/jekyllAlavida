@@ -1,0 +1,29 @@
+<!-- #3 option Area start -->
+<section class="section  circle-bgr-tl">
+	<div  class=" back-right-text-c">
+		<div class="container">
+			{% if page.takeAction-heading == "" %}
+				<div class="row text-center mb-60 ">
+					<div class="wow">
+						<div class="col-md-8 col-md-offset-2"><h1 class="text-center wow "> {{ page.takeAction-heading }} </h1  ></div>
+					</div>
+				</div>
+			{% endif %}
+            <div class="row ">
+					<div class="col-md-4 col-md-offset-2">
+						<img src="{{ page.takeAction-image }}" alt="Feel better in 3 steps Learn More, Get Help and Take Action">
+					</div>
+					<div class="col-md-5 col-md-offset-1">
+						<div class="title-left wow mt100">
+							<h1 class="text-left wow fadeInUp" data-wow-delay="1s">{{page.takeAction-subHeading}}</h1>
+						</div>
+						<p class="about_bottom_h wow fadeInUp" data-wow-delay="1s">{{page.takeAction-desc}}</p>
+						<div class="top-banner wow fadeInRight text-left">
+							<a  href="{{page.takeAction-buttonUrl}}" class="btn btn-default  wow fadeInUp  js-scroll-trigger" data-wow-delay="1s">{{page.takeAction-buttonText}}</a>
+						</div>
+					</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- #3 option Area END -->

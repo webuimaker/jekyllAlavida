@@ -1,0 +1,62 @@
+title: Care Team
+subTitle: Licensed doctors and therapists who love what they do.
+btn1Text: SEE A DOCTOR NOW
+btn1Url: https://alavida.co/booking/assessment
+btn2Text: LEARN MORE
+btn2Url: "#"
+###Members
+member:
+ - avatar: assets/images/team/keir-peterson.jpg
+   name: Dr. Keir Peterson
+   position: Emergency Medicine & Addiction Physician
+   star: 5
+   desc: At Alavida, I can help support patients in meeting their goals around alcohol use with science-based care, without judgment or shame.
+   socials:
+     - link: http://twitter.com
+       icon: twitter
+     - link: http://facebook.com
+ - avatar: assets/images/team/coryarthurs.jpg
+   name: Cory Arthurs, MC RCC
+   position: Therapist
+   star: 5
+   desc: At Alavida, I have the opportunity to meet clients where they're at, support them in identifying their own unique goals, and witness as they explore meaningful change.
+   socials:
+     - link: http://twitter.com
+       icon: twitter
+     - link: http://facebook.com
+ - avatar: assets/images/team/jennifer-lee.jpg
+   name: Jennifer Lee
+   position: Therapist
+   star: 5
+   desc: At Alavida, I have the opportunity to meet clients where they're at, support them in identifying their own unique goals, and witness as they explore meaningful change.
+   socials:
+     - link: http://twitter.com
+       icon: twitter
+     - link: http://facebook.com
+ - avatar: assets/images/team/lindsay-killam.jpg
+   name: Lindsay Killam
+   position: Therapist
+   star: 5
+   desc: At Alavida, I have the opportunity to meet clients where they're at, support them in identifying their own unique goals, and witness as they explore meaningful change.
+   socials:
+     - link: http://twitter.com
+       icon: twitter
+     - link: http://facebook.com
+ - avatar: assets/images/team/margarettan.jpg
+   name: Margaret Tan
+   position: Therapist
+   star: 5
+   desc: At Alavida, I have the opportunity to meet clients where they're at, support them in identifying their own unique goals, and witness as they explore meaningful change.
+   socials:
+     - link: http://twitter.com
+       icon: twitter
+     - link: http://facebook.com
+ - avatar: assets/images/team/paul-singh.jpg
+   name: Paul Singh
+   position: Therapist
+   star: 5
+   desc: At Alavida, I have the opportunity to meet clients where they're at, support them in identifying their own unique goals, and witness as they explore meaningful change.
+   socials:
+     - link: http://twitter.com
+       icon: twitter
+     - link: http://facebook.com

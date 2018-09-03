@@ -1,0 +1,23 @@
+note: "*Source: ALAVIDA Client Completion Data, Nov'17-Apr'18"
+###Members
+insight:
+ - icon: assets/images/calender-icon.png
+   counter: 6
+   counterBeforeSign: ">"
+   counterafter: "mo"
+   desc: Results in under six months
+ - icon: assets/images/heart-in-hand-icon.png
+   counter: 300
+   counterBeforeSign: ""
+   counterafter: "+"
+   desc: Getting help now
+ - icon: assets/images/cheers-icon.png
+   counter: 82.5
+   counterBeforeSign: ""
+   counterafter: "%"
+   desc: Regained control of drinking*
+ - icon: assets/images/knowlege-icon.png
+   counter: 17,000
+   counterBeforeSign: ""
+   counterafter: "+"
+   desc: Learning more
