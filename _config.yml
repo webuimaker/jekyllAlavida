@@ -36,8 +36,10 @@ social:
     url: https://www.facebook.com/alavidahealth/
 
 
-  
-  
+### Collections
+collections:
+  help:
+    output: true
   
   
   

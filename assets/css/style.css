@@ -3546,10 +3546,51 @@ button.testi-nav-right.slick-arrow {
 		background-position: -10% -4%;
 	}
 	
-/*------------------------------------	3 call to action  ------------------------------------*/
-
-
-
+/*------------------------------------	Header Search  ------------------------------------*/
+.stylish-input-group{
+	width:60%;
+	box-shadow: 0 1px 1px 0 rgba(90,122,190,0.1), 0 3px 10px 0 rgba(90,122,190,0.2);
+    transition-duration: 1s;
+}
+.stylish-input-group input.form-control{
+	height:50px;
+	border:0px;
+	box-shadow:none;
+	font-size: 16px;
+}
+.stylish-input-group input.form-control::placeholder, .stylish-input-group input.form-control::-webkit-input-placeholder{
+	color:#6b747d;
+}
+.stylish-input-group  .input-group-addon{
+	background: #fff;
+    border: 0px;
+    color: #f56b3e;
+    padding: 8px 0px 8px 8px;
+}
+.stylish-input-group  .input-group-addon button{
+	background:none;
+	border:0px;
+}
+/*------------------------------------	Help  ------------------------------------*/
+.help-cat .cat{
+	display:flex;
+	flex-wrap: wrap;
+}
+.help-cat .cat li{
+	width: 33%;
+	text-align:center;
+	margin-bottom:50px;
+}
+.help-cat .cat li a{
+	color:#f56b3e !important;
+	padding:15px;
+	display:block;
+	font-size:20px;
+}
+.help-cat .cat li a:hover{
+	background:#f56b3e;
+	color:#fff !important;
+}
 /*-----------------------20.sidebar-style-here-----------------------*/
 
 /*------------------------------------

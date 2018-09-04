@@ -20,7 +20,7 @@
   path: https://press.alavida.co
   section_id: referral
 - name: Help
-  path: contact.html
+  path: help.html
   section_id: help
 - name: Call Now
   path: signup.html

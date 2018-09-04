@@ -1,6 +1,8 @@
 <!-- #Footer Area start -->
 <footer class="footer">
 	<div class="container">
+		{% if  page.footer_Sub != "false" %}
+		
 		<div class="footer-top">
 			<div class="row">
 				<div class="col-md-7 newsletter-title">{{site.data.footer.newsletterText}}</div>
@@ -14,6 +16,7 @@
 				</div>
 			</div>
 		</div>
+		{% endif  %}
         <div class="row footer-link-area">
 			<div class="col-lg-4  col-md-4 col-sm-12">
 				<div class="footer_dv">
