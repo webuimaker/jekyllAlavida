@@ -33,15 +33,6 @@ member:
      - link: http://twitter.com
        icon: twitter
      - link: http://facebook.com
- - avatar: assets/images/team/lindsay-killam.jpg
-   name: Lindsay Killam
-   position: Therapist
-   star: 5
-   desc: At Alavida, I have the opportunity to meet clients where they're at, support them in identifying their own unique goals, and witness as they explore meaningful change.
-   socials:
-     - link: http://twitter.com
-       icon: twitter
-     - link: http://facebook.com
  - avatar: assets/images/team/margarettan.jpg
    name: Margaret Tan
    position: Therapist
