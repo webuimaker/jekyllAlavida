@@ -51,7 +51,7 @@
 									<h5 class="wow fadeInUp main-h" data-wow-delay="0.2s" >  {{ page.banner_title }}</h5>
 									<p class="banner-text wow fadeInUp main-h3" data-wow-delay="0.8s">{{   page.banner_desc }}</p>
 									<div class="top-banner wow fadeInRight">
-										<a id=""  class="btn btn-green  wow fadeInUp  js-scroll-trigger" data-wow-delay="1s"  role="button" data-toggle="modal" 
+										<a id=""  class="btn btn-green  wow fadeInUp  js-scroll-trigger {{page.banner_button_klass}}" data-wow-delay="1s"  role="button" data-toggle="modal" 
 										data-target="{{page.banner_button_url}}"> {{   page.banner_button_text }}</a>
 									</div>
 									{% if  page.banner_video == true %}
