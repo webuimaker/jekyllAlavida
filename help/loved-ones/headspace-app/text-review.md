@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: single
 title: test
 tags: misc
 type: "headspace-app"
