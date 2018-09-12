@@ -42,7 +42,7 @@
 							{% else %}
 								{% assign active_class = "" %}
 							{% endif %}
-							<li><a href="{{ relBase }}{{item.path}}" class="{{active_class}}">{{item.name}}</a></li>
+							<li><a href="{% if item.externalUrl == true %}{{item.path}} {% else %}{{ relBase }}{{item.path | remove:'/index.html' | split: '/'}}{% endif %}" class="{{active_class}}">{{item.name}}</a></li>
 						{% endfor %}
                     </ul>
 				</div>
@@ -56,7 +56,7 @@
 							{% else %}
 								{% assign active_class = "" %}
 							{% endif %}
-							<li><a href="{{ relBase }}{{item.path}}" class="{{active_class}}">{{item.name}}</a></li>
+							<li><a href="{% if item.externalUrl == true %}{{item.path}} {% else %}{{ relBase }}{{item.path | remove:'/index.html' | split: '/'}}{% endif %}" class="{{active_class}}">{{item.name}}</a></li>
 						{% endfor %}
                     </ul>
 				</div>

@@ -30,7 +30,7 @@
 							  {% endif %}
 							  
 								<li class=" {% if item.enable == false %} hide {% endif %}">
-								  <a href="{{ item.path }}" class="{{active_class}} {% if forloop.last  %}  btn btn-default btn-call {% endif %}" >{{ item.name }}</a>
+								  <a href="{{ item.path | remove:'/index.html' | split: '/' }}" class="{{active_class}} {% if forloop.last  %}  btn btn-default btn-call {% endif %}" >{{ item.name }}</a>
 								</li>
 							  
 							{% endfor %}

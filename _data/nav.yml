@@ -1,12 +1,12 @@
 - name: For You
-  path: index.html
+  path: index/
   enable: false
   section_id: home
 - name: For Companies
-  path: companies.html
+  path: companies/
   section_id: companies
 - name: For Loved Ones
-  path: love-one.html
+  path: love-one/
   section_id: love-one
 - name: Science
   path: https://alavida.co/publications

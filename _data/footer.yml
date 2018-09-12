@@ -8,21 +8,25 @@ links:
  col1:
     - name: For You
       path: index.html
+      externalUrl: false
       section_id: home
     - name: For Companies
-      path: "companies.html"
+      path: "companies/"
       section_id: companies
     - name: For Loved Ones
-      path: love-one.html
+      path: love-one/
       section_id: love-one
     - name: Science
       path: https://alavida.co/publications
+      externalUrl: true
       section_id: 
     - name: Terms
       path: https://alavida.co/terms-of-service
+      externalUrl: true
       section_id: 
     - name: Privacy
       path: https://alavida.co/privacy
+      externalUrl: true
       section_id: 
     - name: Referral
       path: "#"
@@ -38,8 +42,9 @@ links:
       path: "#"
       section_id: news
     - name: Help
-      path: /help/
+      path: help/
       section_id: help
     - name: Work with Us
       path: "https://alavida-health-ltd.workable.com"
+      externalUrl: true
       section_id: work-with-us
