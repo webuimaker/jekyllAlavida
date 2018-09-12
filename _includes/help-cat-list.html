@@ -1,0 +1,148 @@
+<section class="section">
+<div class="container">
+	<div class="row">
+		<div class="col-md-10 col-md-offset-1">
+			<h2>{{page.title}} </h2>
+			{% assign subTopic  = page.topics %}
+			
+			{% for planet in site.data.help-type %}
+				{% if planet.subTopic == "true" and  planet.folder == page.topic %}
+					<ul class="help-topic-list">
+						{% for topList in planet.topics %}
+							<li class="sub-topic">
+								<span class="topic">{{topList.topic}}</span>
+								{% include help-list.html type = topList.folder %}
+							</li>
+						{% endfor %}
+					</ul>
+				{% endif %}
+				{% if planet.folder == page.topic %}
+					{% include help-list.html type = page.topic %}
+				{% endif %}
+				
+			{% endfor %}
+			
+			
+			
+			<!--
+				{% for planet in site.data.help-type %}
+					{% assign currentTopic  = planet.topics %}
+					
+						<ul>
+							{% for topic in planet.topics %}
+								<li>	<h3>{{ topic.topic }} </h3>
+								
+								{% for pagel in site.pages %}
+									+++ {{ pagel.type }}
+									
+									{% if pagel.type == topic.topic %}
+										{{pagel.title}}
+									{% endif %}
+									
+								{% endfor %}
+								
+								
+																	
+								</li>
+							{% endfor %}
+						</ul>
+					
+					
+				{% endfor %}
+					
+				-->
+			
+			<ul class="help-topic-list hide">
+				<li class="sub-topic">
+					<span class="topic">Amazon Alexa</span>
+					<ul class="topic">
+						<li>
+							<a href="#">How do I use Headspace on Amazon Alexa?</a>
+						</li>
+						<li>
+							<a href="#">How do I connect my Headspace account with Alexa?</a>
+						</li>
+						<li>
+							<a href="#">How can I get access to the Headspace Library on Alexa?</a>
+						</li>
+						<li>
+							<a href="#">In which countries can I use the Headspace Alexa skill?</a>
+						</li>
+						<li>
+							<a href="#">Which Amazon devices are compatible with Headspace?</a>
+						</li>
+						<li>
+							<a href="#">How do I save a pack to use on Amazon Alexa?</a>
+						</li>
+					</ul>
+				</li>
+				<li class="sub-topic">
+					<span class="topic">Using the Headspace App</span>
+					<ul class="topic">
+						<li>
+							<a href="#">How do I use Vitality with Headspace?</a>
+						</li>
+						<li>
+							<a href="#">Is there a Headspace app for the Apple Watch?</a>
+						</li>
+						<li>
+							<a href="#">Do I need separate accounts or subscriptions for separate devices?</a>
+						</li>
+						<li>
+							<a href="#">Can I reset my progress or statistics?</a>
+						</li>
+						<li>
+							<a href="#">Watch this video on how to use the app</a>
+						</li>
+						<li>
+							<a href="#">How does the run streak feature work?</a>
+						</li>
+					</ul>
+				</li>
+				
+				<li class="sub-topic">
+					<span class="topic">Google Assistant</span>
+					<ul class="topic">
+						<li>
+							<a href="#">Google asked me to turn on Personal Results. What is that and how do I turn it on?</a>
+						</li>
+						<li>
+							<a href="#">How do I use Headspace on my Google Home?</a>
+						</li>
+						<li>
+							<a href="#">How do I set up Headspace on my Google Home?</a>
+						</li>
+						<li>
+							<a href="#">How do I connect Headspace to my Google Home account?</a>
+						</li>
+						<li>
+							<a href="#">How can I access the Headspace Library on Google Assistant?</a>
+						</li>
+						<li>
+							<a href="#">How do I queue up a pack for Amazon Alexa or Google Assistant?</a>
+						</li>
+					</ul>
+				</li>
+				<li class="sub-topic">
+					<span class="topic">Headspace for Kids</span>
+					<ul class="topic">
+						<li>
+							<a href="#">Will my child’s completed Kids sessions count towards my own progress?</a>
+						</li>
+						<li>
+							<a href="#">Can kids learn to meditate?</a>
+						</li>
+						<li>
+							<a href="#">Where are the Headspace for Kids sessions located?</a>
+						</li>
+						<li>
+							<a href="#">Can my child listen to sessions outside of their age range?</a>
+						</li>
+					</ul>
+				</li>
+			</ul>
+			
+		</div>
+	</div>
+</div>
+</section>

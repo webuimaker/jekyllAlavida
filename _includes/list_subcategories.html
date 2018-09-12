@@ -1,0 +1,9 @@
+{% assign animals = site.animals| sort:'title' %}
+ {% assign from = page.url | remove: '/index.html' %}
+ {% assign deep = (page.url | split: '/' | size) + 1 %}
+ {% for animal in animals %}
+ {% assign d = animal.url | remove: '/index.html' | split: '/' | size %}
+ {% if animal.url != page.url and animal.url contains from and animal.url contains "index" and (include.dig or deep == d) %}
+ <a  href={{ relBase }}{{ animal.url  }} style="color:#000 !important">{{animal.title}}</a>
+ {% endif %}
+ {% endfor %}

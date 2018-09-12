@@ -1,26 +1,33 @@
 <!-- jQuery JS -->
-<script src="assets/js/jquery-1.12.0.min.js"></script>
+<script src="{{ relBase }}assets/js/jquery-1.12.0.min.js"></script>
 <!-- Bootstrap JS -->
-<script src="assets/js/bootstrap.min.js"></script>
-<script src="assets/js/venobox.js"></script>
-<script src="assets/js/plugins.js"></script>
-<script src="assets/vendors/popup/lightbox.min.js"></script>
+<script src="{{ relBase }}assets/js/bootstrap.min.js"></script>
+<script src="{{ relBase }}assets/js/venobox.js"></script>
+<script src="{{ relBase }}assets/js/plugins.js"></script>
+<script src="{{ relBase }}assets/vendors/popup/lightbox.min.js"></script>
 <!-- Animate JS -->
-<script src="assets/vendors/animate/wow.min.js"></script>
+<script src="{{ relBase }}assets/vendors/animate/wow.min.js"></script>
 <!-- Owlcarousel JS -->
-<script src="assets/vendors/owl_carousel/owl.carousel.min.js"></script>
+<script src="{{ relBase }}assets/vendors/owl_carousel/owl.carousel.min.js"></script>
 <!-- Stellar JS -->
 <!-- Theme JS -->
-<script src="assets/js/theme.min.js"></script>
-<script type="text/javascript" src="assets/js/slick.js"></script>
-<script src="assets/js/main.js"></script>
+<script src="{{ relBase }}assets/js/theme.min.js"></script>
+<script type="text/javascript" src="{{ relBase }}assets/js/slick.js"></script>
+<script src="{{ relBase }}assets/js/main.js"></script>
 <script>
 	$(window).scroll(function() {
 		if($(this).scrollTop()>5) {
 			$( ".navbar-me" ).addClass("fixed-me");
 		} 
 		else {
-			$( ".navbar-me" ).removeClass("fixed-me");
+			if ($( ".navbar-me" ).hasClass( "white" ))
+			{
+				$( ".navbar-me" ).addClass("fixed-me");
+			}
+			else{
+				$( ".navbar-me" ).removeClass("fixed-me");
+			}
+			
 		}
 	});
 </script>

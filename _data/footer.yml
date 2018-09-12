@@ -10,7 +10,7 @@ links:
       path: index.html
       section_id: home
     - name: For Companies
-      path: "#"
+      path: "companies.html"
       section_id: companies
     - name: For Loved Ones
       path: love-one.html
@@ -38,7 +38,7 @@ links:
       path: "#"
       section_id: news
     - name: Help
-      path: "#"
+      path: /help/
       section_id: help
     - name: Work with Us
       path: "https://alavida-health-ltd.workable.com"

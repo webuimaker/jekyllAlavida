@@ -1,0 +1,24 @@
+<aside class="side-col">
+	<div class="title-head">
+		<h3>Related article</h3>
+	</div>
+	<ul class="article-list">
+		{% for planet in site.pages %}
+			{% if planet.type == page.type %}
+				<li>
+					<a href="{{ relBase }}{{planet.url}}" {% if planet.title == page.title %} class="active" {% endif %} >{{planet.title}}</a>
+				</li>
+			{% endif %}
+		{% endfor %}
+	<!--
+		<li><a href="#" class="active">How do I use Headspace on Amazon Alexa?</a></li>
+		<li><a href="#">How do I connect my  Headspace account with Alexa? </a></li>
+		<li><a href="#">How can I get access to the Headspace Library on Alexa?</a></li>
+		<li><a href="#">In which countries can I use the Headspace Alexa skill?</a></li>
+		<li><a href="#">Which Amazon devices are compatible with Headspace?</a></li>
+		<li><a href="#">How do I save a pack to use on Amazon Alexa?</a></li>
+		<li><a href="#">In which countries can I use the Headspace Alexa skill? </a></li>
+		
+	-->
+	</ul>
+</aside>

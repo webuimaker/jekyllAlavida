@@ -3,7 +3,7 @@
   enable: false
   section_id: home
 - name: For Companies
-  path: 
+  path: companies.html
   section_id: companies
 - name: For Loved Ones
   path: love-one.html
@@ -20,7 +20,7 @@
   path: https://press.alavida.co
   section_id: referral
 - name: Help
-  path: help.html
+  path: /help/
   section_id: help
 - name: Call Now
   path: signup.html

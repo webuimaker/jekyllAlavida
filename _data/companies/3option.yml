@@ -1,0 +1,20 @@
+heading: The World’s First Digital Problem Drinking Health and Wellness Hub is for Everyone
+callAction:
+  - image: assets/images/members.jpg
+    text: Members
+    desc: Access from anywhere top doctors and therapists, specialized in dealing with alcohol.
+    btnText: Learn more
+    btnUrl: "#"
+    btnPopupKlass: openmodal
+  - image: assets/images/employers2.jpg
+    text: Employers
+    desc: Improve productivity, lower costs and grow retention.
+    btnText: Learn more
+    btnUrl: "#"
+    btnPopupKlass: openmodal
+  - image: assets/images/doctor-therapist.jpg
+    text: Doctor and Therapist
+    desc: Physician, therapist, or researcher? We love science! If you do too, be a part of what we do.
+    btnText: Learn more
+    btnUrl: "#"
+    btnPopupKlass: openmodal

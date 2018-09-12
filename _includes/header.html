@@ -10,7 +10,8 @@
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 					  </button>
-					   <a class="navbar-brand logo-biss" href="{{site.url}}"> <img src="assets/images/logo_img.png" class="img-responsive"></a>
+					   <a class="navbar-brand logo-biss" href="{{site.url}}"> <img src="{{ relBase }}{{site.logo}}" class="img-responsive"> </a>
+					   
 					</div>      
 					<div class="collapse navbar-collapse navbar-right  header-right-menu" id="navbar-primary-collapse">
 						<ul class="nav navbar-nav">
@@ -40,7 +41,7 @@
 				</div>
 			</nav>
 			<!-- End Header_Area -->
-			<div class="bg-banner-img clip-ellipse" style="background-image:url({{ page.banner_bg }})">
+			<div class="bg-banner-img clip-ellipse" style="background-image:url({{relBase}}/{{page.banner_bg}})">
 				<div class="ovrllay" style="background:rgba({{ page.ovrlay_bg }})">
 					<!-- #banner start -->
 					<section id="banner" class=" mb-90">
@@ -67,7 +68,7 @@
 				</div>
 			</div>
 			
-			{% if page.url == "/" %}
+			{% if page.partners == true %}
 				{% include partners.html %}
 			{% endif %}
 		</div>

@@ -1,0 +1,11 @@
+<ul class="topic">
+    {% for planet in site.pages %}
+        {% if planet.type == include.type %}
+			<li>
+				<a href="{{ relBase }}{{planet.url}}" style="color:#000">{{planet.title}}</a>
+			</li>
+		{% endif %}
+    {% endfor %}
+</ul>
+
+

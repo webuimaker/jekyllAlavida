@@ -1,0 +1,37 @@
+- title: New to ALAVIDA
+  folder: new-alavida
+  content: 'New to ALAVIDA'
+- title: Alavida for Loved Ones
+  folder: loved-ones
+  content: 'Alavida for Loved Ones'
+  subTopic: "true"
+  topics: 
+    -  topic: 'Amazon Alexa'
+       folder: amazon-alexa
+    -  topic: 'Using the Headspace App'
+       folder: headspace-app
+    -  topic: 'Google Assistant'
+       folder: google-assistant
+    -  topic: 'Headspace for Kids'
+       folder: headspace-kids
+- title: Recent Updates
+  folder: recent-updates
+  content: 'Recent Updates'
+- title: The Science
+  folder: the-science
+  content: 'The Science'
+- title: Troubleshooting
+  folder: troubleshooting
+  content: 'Troubleshooting'
+- title: Alavida for Work
+  folder: alavida-work
+  content: 'Alavida for Work'
+- title: Payment & Billing
+  folder: payment-billing
+  content: 'Payment & Billing'
+- title: Contact Us
+  folder: contact-us
+  content: 'Contact Us'
+- title: Coverage
+  folder: coverage
+  content: 'coverage'
